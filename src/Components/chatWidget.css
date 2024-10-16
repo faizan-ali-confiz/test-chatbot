@@ -1,0 +1,99 @@
+#chat-circle {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: #5a5eb9;
+  border-radius: 50%;
+  color: white;
+  padding: 15px;
+  cursor: pointer;
+  /* Removing shadow */
+}
+
+.chat-box {
+  display: block;
+  background: #efefef;
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  width: 350px;
+  max-width: 85vw;
+  border-radius: 5px;
+  /* Removing shadow */
+}
+
+.chat-box-header {
+  background: #5a5eb9;
+  height: 70px;
+  border-radius: 5px 5px 0 0;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  padding-top: 17px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.chat-box-body {
+  height: 370px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+.chat-input {
+  background: #f4f7f9;
+  display: flex;
+  width: 100%;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.chat-input-field {
+  width: 100%;
+  padding: 10px 45px 10px 10px; /* Padding to make space for the icon */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.chat-submit {
+  position: absolute;
+  right: 10px; /* Place the icon inside the input field */
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #5a5eb9;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.chat-msg {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.chat-msg.self .cm-msg-text {
+  background: #5a5eb9;
+  color: white;
+  align-self: flex-end;
+}
+
+.chat-msg .msg-avatar img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.cm-msg-text {
+  background: white;
+  padding: 10px;
+  border-radius: 15px;
+}
